@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
 
 int main(int argc, char **argv )
 {
@@ -30,12 +31,28 @@ int main(int argc, char **argv )
       return 0;
     */
 
+    /*
     int a;
     int num1 = 5,num2;
     scanf(" %d", &a);
     if(num1 > (num2 = a)){
         printf(" num1 is greater than you");
     }
+    */
+
+    char input[100];
+
+    while(fgets(input, 100, stdin)){
+        printf("Input: %s\n", input);
+
+    if(strncmp(input, "quit", 4) == 0){
+        printf("Exiting the game\n");
+        break;
+        }
+
+    }
+
+
 
     return 0;
 }
