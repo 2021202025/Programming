@@ -40,6 +40,7 @@ int main(int argc, char **argv )
     }
     */
 
+    /*
     char input[100];
 
     while(fgets(input, 100, stdin)){
@@ -51,7 +52,34 @@ int main(int argc, char **argv )
         }
 
     }
+    */
 
+    int i =0;
+    char input[100];
+    int numEntered = 0;
+    int array[100];
+    int totalEntered = 0;
+
+    for(i=0; i<6; i++){
+
+        printf("Enter a number:  ");
+        fgets(input, 100, stdin);
+
+        if(strncmp(input, "q", 1) == 0){
+            break;
+        }
+
+        numEntered = atoi(input);
+       // printf("You entered %d \n", numEntered);
+
+        array[i] = numEntered;
+        totalEntered++;
+    }
+
+    printf("Stored numbers are:\t");
+    for(i=0; i<totalEntered; i++){
+        printf("%d\t", array[i]);
+    }
 
 
     return 0;
