@@ -54,6 +54,7 @@ int main(int argc, char **argv )
     }
     */
 
+    /*
     int i =0;
     char input[100];
     int numEntered = 0;
@@ -80,6 +81,27 @@ int main(int argc, char **argv )
     for(i=0; i<totalEntered; i++){
         printf("%d\t", array[i]);
     }
+    */
+
+    int a = 3;
+    int b = 5;
+    int c = a;
+
+    int *pa, *pb;
+
+    printf("Value of a = %d \n", a);
+    printf("Value of b = %d \n", b);
+
+    pa = &a;
+    pb = &b;
+
+    printf("Location of a = %d \n", *pa);
+    printf("Location of b = %d \n", *pb);
+
+    a += 7;
+
+     printf("Location of a = %d \n", *pa);
+     printf("Value of C = %d \n", c);
 
 
     return 0;
