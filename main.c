@@ -83,7 +83,7 @@ int main(int argc, char **argv )
     }
     */
 
-    int a = 3;
+    /*int a = 3;
     int b = 5;
     int c = a;
 
@@ -102,6 +102,25 @@ int main(int argc, char **argv )
 
      printf("Location of a = %d \n", *pa);
      printf("Value of C = %d \n", c);
+    */
+
+    char mychar[] = "Shelby Gt350R is the best car in the world";
+    int i = 0;
+    char *pchar = &mychar[0];
+
+    while( *pchar ){
+            printf("Position: %c Address: %p \n", *pchar, pchar);
+            pchar++;
+            i++;
+
+            if(i == 9){
+                *pchar = '5';
+            }
+
+    }
+
+    printf("%s", mychar);
+
 
 
     return 0;
