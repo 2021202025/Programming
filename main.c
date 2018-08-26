@@ -104,6 +104,7 @@ int main(int argc, char **argv )
      printf("Value of C = %d \n", c);
     */
 
+    /*
     char mychar[] = "Shelby Gt350R is the best car in the world";
     int i = 0;
     char *pchar = &mychar[0];
@@ -121,6 +122,21 @@ int main(int argc, char **argv )
 
     printf("%s", mychar);
 
+    */
+
+    int Switch_A = 13; //1101
+    int Switch_B = 7; //0111
+
+    if((Switch_A & Switch_B) != 0){
+        printf("Switch on");
+    }
+
+    else printf("Switch off");
+
+    int switch_c = Switch_A | Switch_B;
+    int switch_d = Switch_A & Switch_B;
+
+    printf("\n\nSwitch C = %d \nSwitch D = %d\n", switch_c, switch_d);
 
 
     return 0;
