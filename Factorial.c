@@ -3,21 +3,31 @@
 #include<stdlib.h>
 #include<string.h>
 
+
+int Factorial(int n);
+
 void main(){
 
     int i;
     int n;
-    int result = 1;
 
     printf("Factorial value to be computated: ");
     scanf("%d", &n);
 
+    printf("Factorial of %d: %d", n,Factorial(n));
+
+return 0;
+
+}
+
+
+int Factorial(int n){
+
+    int i, result=1;
     for(i=1;i<=n;i++){
         result = result*i;
     }
 
-    printf("Factorial of %d: %d", n,result);
-
-return 0;
+return result;
 
 }
